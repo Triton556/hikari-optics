@@ -420,6 +420,7 @@ dialog {
 .instrument-labels path { fill:none; stroke:#f3ead2a6; stroke-width:1; }
 .instrument-labels button { position:absolute; left:0; top:0; width:122px; min-height:68px; padding:9px 12px; pointer-events:auto; touch-action:none; text-align:left; border:1px solid #fff8; border-top:2px solid var(--ring-color); border-radius:9px; background:#eff0e4dc; color:#213d42; backdrop-filter:blur(14px); box-shadow:0 5px 20px #102c3824; cursor:ew-resize; }
 .instrument-labels button:hover { background:#fff7e6f2; box-shadow:0 5px 24px #102c383b; }
+.instrument-labels button[aria-pressed=true] { border-color:var(--ring-color); box-shadow:0 0 0 2px var(--ring-color),0 5px 24px #102c383b; }
 .instrument-labels span { display:block; font-size:11px; letter-spacing:.04em; }
 .instrument-labels strong { display:block; font-size:18px; font-weight:600; line-height:1.3; }
 .instrument-labels small { display:block; font-size:9px; color:#617779; }
@@ -486,3 +487,16 @@ body:not(.focus-shelf-open) #feedback { bottom:76px; }
 }
 .focus-recipes strong em { display:none; font-style:normal; }
 @media(max-width:650px) { .focus-recipes strong em{display:inline;font-size:12px}.focus-recipes strong span{display:none} }
+
+/* Keep existing focus controls usable with a finger. No second control panel. */
+.focus-shelf-toggle { min-height:44px; }
+@media(max-width:650px) {
+  .focus-recipes button,.focus-targets button,.focus-footer button { min-height:44px; }
+  .focus-footer { justify-content:space-between; }
+  .focus-footer output { width:100%; }
+  .focus-targets [data-depth] { font-size:10px; }
+  #back,#help { min-height:44px; }
+}
+
+/* Tall tablets use the same stacked inspection as phones. */
+body[data-light-path-layout="portrait"] .identity { display:none; }

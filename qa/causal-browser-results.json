@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "Combined inspection leaves the sensor image unchanged",
+      "pass": true,
+      "meanDifference": 0
+    },
+    {
+      "name": "Existing monitor docks beside the cutaway",
+      "pass": true
+    },
+    {
+      "name": "Focused point has a zero paraxial diameter",
+      "pass": true,
+      "blurMm": 8.881784197001252e-16
+    },
+    {
+      "name": "Focus adjustment changes both mechanism and photograph",
+      "pass": true,
+      "rearGroupMm": 61.03122700430685,
+      "blurMm": 0.13419483112689568,
+      "meanDifference": 3.942185329861111
+    },
+    {
+      "name": "Stopping down shrinks the spot without moving groups",
+      "pass": true,
+      "wideMm": 0.13419483112689568,
+      "stoppedMm": 0.06831736857369108
+    },
+    {
+      "name": "Aperture adjustment changes real sensor pixels",
+      "pass": true,
+      "meanDifference": 0.7892317708333333
+    },
+    {
+      "name": "Monitor close-up restores its physical home",
+      "pass": true
+    },
+    {
+      "name": "Returning to the table restores the same monitor",
+      "pass": true
+    }
+  ]
+}

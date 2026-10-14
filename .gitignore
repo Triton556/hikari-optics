@@ -1,6 +1,15 @@
 node_modules/
 dist/
+dist-next/
 .env*
 .DS_Store
+*.zip
+.openai/*.local.*
+qa/*.local.sh
 showcase/node_modules/
 showcase/renders/
+
+
+# Raw native captures stay local; curated media and provenance are tracked.
+qa/causal-captures/frame-*.png
+qa/causal-captures/*-gif-review.png

@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { benchX } from './placement.js';
 import { maxAperture, dof } from './optics.js';
+import { installLightPath } from './light-path.js';
+import { focusTargetPatch } from './light-path-model.js';
 
 export const FOCAL_PRESETS = [
   { id: 'wide', focal: 16, title: 'Широкий план', detail: '16 мм · больше пространства' },
@@ -20,12 +22,12 @@ export function installFocusPresets({ lab, getState, apply, visit, getStation })
   const root = document.createElement('section');
   root.className = 'focus-shelf';
   root.setAttribute('aria-label', 'Опыты с фокусом');
-  root.innerHTML = `<button class="focus-shelf-toggle" aria-expanded="false">Опыты с фокусом <span>16 · 28 · 50 мм · v8</span><b>⌃</b></button>
+  root.innerHTML = `<button class="focus-shelf-toggle" aria-expanded="false">Опыты с фокусом <span>16 · 28 · 50 мм · v9</span><b>⌃</b></button>
     <div class="focus-shelf-body" hidden>
       <div class="focus-recipes">${FOCAL_PRESETS.map(p => `<button data-focal="${p.id}" aria-pressed="false"><strong><em>${p.focal} мм</em><span>${p.title}</span></strong><small>${p.detail}</small></button>`).join('')}</div>
       <div class="focus-targets"><span>Резкость на</span><button data-target="cat">Котике</button><button data-target="flower">Цветке</button><button data-target="chart">Мишени</button><button data-depth>Глубже · ƒ/11</button></div>
-      <div class="focus-footer"><output></output><button data-view="objects">Сцена</button><button data-view="screen">Кадр</button><button data-view="lens">Внутри объектива</button></div>
-      <p>Мятная плоскость показывает выбранную дистанцию резкости. Фокусное расстояние меняет охват кадра. «Резкость на» переносит фокус между объектами.</p>
+      <div class="focus-footer"><output></output><button data-view="objects">Сцена</button><button data-view="screen">Кадр крупно</button><button data-view="lens">Лучи + кадр</button></div>
+      <p>Мятная плоскость — дистанция резкости. Лучи — геометрическое приближение; кадр использует глубинное размытие. Пятно увеличено ×24, сетка условная.</p>
     </div>`;
   document.body.append(root);
   const plane = new THREE.Mesh(new THREE.PlaneGeometry(2.45,1.55),new THREE.MeshBasicMaterial({color:0x9ff7c6,transparent:true,opacity:.10,side:THREE.DoubleSide,depthWrite:false}));
@@ -40,7 +42,7 @@ export function installFocusPresets({ lab, getState, apply, visit, getStation })
   const previousFrame = lab.onFrame;
   lab.onFrame = (time,dt) => {
     previousFrame?.(time,dt);
-    plane.visible = !body.hidden && ['objects','lens'].includes(getStation());
+    plane.visible = ((!body.hidden && ['objects','lens'].includes(getStation())) || plane.userData.causalVisible) && getState().experiment !== 'prism';
     zone.visible = plane.visible;
     const state = getState(), range = dof(state.focal,state.aperture,state.focus);
     const nearX = benchX(Math.max(.25,range.near)), farX = benchX(Math.min(5,range.far));
@@ -50,16 +52,21 @@ export function installFocusPresets({ lab, getState, apply, visit, getStation })
   const body = root.querySelector('.focus-shelf-body');
   const toggle = root.querySelector('.focus-shelf-toggle');
   toggle.onclick = () => {
-    body.hidden = !body.hidden;
-    toggle.setAttribute('aria-expanded', String(!body.hidden));
-    document.body.classList.toggle('focus-shelf-open', !body.hidden);
-    if (!body.hidden) { visit('screen'); apply({filter:'none',filterBypass:false,experiment:undefined,pane:false,exposureAuto:true}); }
+    const opening = body.hidden;
+    // apply() synchronises the shelf too: first leave the desk, then reveal it.
+    if (opening) {
+      apply({filter:'none',filterBypass:false,experiment:undefined,pane:false,exposureAuto:true,cutaway:true,rays:true});
+      visit('lens');
+    }
+    body.hidden = !opening;
+    toggle.setAttribute('aria-expanded', String(opening));
+    document.body.classList.toggle('focus-shelf-open', opening);
     sync();
   };
   root.querySelectorAll('[data-focal]').forEach(b => b.onclick = () => { apply(focalPatch(b.dataset.focal)); sync(); });
   root.querySelectorAll('[data-target]').forEach(b => b.onclick = () => {
     const s = getState(), target = b.dataset.target;
-    apply({ focus: s[target + 'Distance'], filter: 'none', filterBypass: false, experiment: undefined, pane: false });
+    apply(focusTargetPatch(s, target));
     sync();
   });
   root.querySelector('[data-depth]').onclick = () => {
@@ -77,5 +84,6 @@ export function installFocusPresets({ lab, getState, apply, visit, getStation })
     root.querySelector('[data-depth]').textContent = s.aperture >= 11 ? 'Мягче · открытая' : 'Глубже · ƒ/11';
     root.querySelectorAll('[data-view]').forEach(b => b.setAttribute('aria-pressed', String(getStation() === b.dataset.view)));
   }
+  installLightPath(lab, { getState, getStation, focusPlane: plane, focusZone: zone });
   return sync;
 }

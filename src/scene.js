@@ -1272,7 +1272,7 @@ export class OpticsScene {
     if (this.selectionRing?.visible) {
       const x =
         this.selectedPart === "aperture"
-          ? 1.31
+          ? this.iris.position.x
           : this.lensElements[this.selectedPart === "zoom" ? 2 : 7].position.x;
       this.selectionRing.position.set(x, 1.62, 0);
       this.selectionRing.material.opacity =

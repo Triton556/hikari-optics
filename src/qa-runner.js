@@ -6,11 +6,13 @@ export function mountQA({
   getPreview,
   rework,
   select,
+  visit,
 }) {
   const p = document.createElement("section");
   p.id = "qa-panel";
   p.innerHTML = `<b>LOCAL QA · IMMERSIVE LAB</b><label> Duration <select id="duration"><option value="60">1 min</option><option value="300">5 min</option><option value="900" selected>15 min</option><option value="2700">45 min</option><option value="3600">60 min</option></select></label><button id="run">Run model/render soak</button><button id="stop">Stop & restore</button><button id="context">Context recovery</button><pre id="result">Ready</pre>`;
   document.body.append(p);
+  import('./qa-causal.js').then(({mountCausalQA})=>mountCausalQA({getState,apply,getLab,getPreview,select,visit}));
   import("./qa-resources.js").then(({ mountResourceQA }) =>
     mountResourceQA({ getState, apply, getLab }),
   );

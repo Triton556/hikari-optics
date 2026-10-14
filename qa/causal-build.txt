@@ -1,0 +1,13 @@
+
+> hikari-optics@1.0.0 build
+> vite build
+
+vite v7.1.11 building for production...
+transforming...
+✓ 44 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   1.11 kB │ gzip:   0.68 kB
+dist/assets/index-X0bZJAWW.css   11.73 kB │ gzip:   3.17 kB
+dist/assets/index-D1JUbv_K.js   693.45 kB │ gzip: 187.10 kB
+✓ built in 5.68s

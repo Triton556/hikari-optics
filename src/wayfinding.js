@@ -1,8 +1,9 @@
 import * as THREE from "three";
+import { lightPathPortrait } from "./light-path-model.js";
 
 // Names belong to the objects, not to a dashboard. The labels and physical rings
 // share the same commands, so keyboard, pointer and direct manipulation agree.
-export function installWayfinding(lab, { getState, getStation, getPreview, select, adjust }) {
+export function installWayfinding(lab, { getState, getStation, getSelected, getPreview, select, adjust }) {
   const root = document.createElement("div");
   root.className = "instrument-labels";
   root.setAttribute("aria-label", "Кольца объектива");
@@ -73,6 +74,7 @@ export function installWayfinding(lab, { getState, getStation, getPreview, selec
   lab.onFrame = function(time, dt) {
     previous?.(time, dt);
     const station = getStation(), state = getState();
+    const portrait = station === "lens" && lightPathPortrait(innerWidth, innerHeight);
     root.hidden = !["lens", "aperture", "filters", "screen", "prism"].includes(station);
     if (root.hidden) return;
     const rect = lab.renderer.domElement.getBoundingClientRect();
@@ -80,7 +82,7 @@ export function installWayfinding(lab, { getState, getStation, getPreview, selec
     const visible = entries.filter(e => {
       const show =
         (station === "prism" && ["prism", "source", "align-source"].includes(e.id)) ||
-        (station === "lens" && ["zoom", "aperture", "focus"].includes(e.id)) ||
+        (station === "lens" && ["zoom", "aperture", "focus", "screen"].includes(e.id) && !(e.id === "screen" && portrait && document.body.classList.contains("focus-shelf-open"))) ||
         (station === "aperture" && e.id === "aperture") ||
         (station === "filters" && state.filter !== "none" && ["filter", "screen"].includes(e.id)) ||
         (station === "screen" && state.filter !== "none" && ["filter", "bypass"].includes(e.id));
@@ -90,6 +92,8 @@ export function installWayfinding(lab, { getState, getStation, getPreview, selec
     });
     if (!visible.length) return;
     for (const e of visible) {
+      if (!["screen", "bypass", "align-source"].includes(e.id))
+        e.button.setAttribute('aria-pressed', String(getSelected?.() === e.id));
       const anchor = station === "screen" ? lab.monitor : e.object;
       anchor.getWorldPosition(e.vector);
       e.vector.y += 0.57;
@@ -113,15 +117,26 @@ export function installWayfinding(lab, { getState, getStation, getPreview, selec
       if (e.button.querySelector("strong").textContent !== value)
         e.button.querySelector("strong").textContent = value;
     }
-    visible.sort((a,b) => a.x - b.x);
-    const width = Math.min(innerWidth < 650 ? 96 : 122, (innerWidth - 32 - (visible.length - 1) * 12) / visible.length), gap = 12;
-    const total = visible.length * width + (visible.length - 1) * gap;
-    const centre = visible.reduce((n,e) => n+e.x,0) / visible.length;
+    const controls = visible.filter(e => !(station === "lens" && e.id === "screen"));
+    const screen = station === "lens" && visible.find(e => e.id === "screen");
+    if (screen) {
+      const width = innerWidth < 650 ? 104 : 122;
+      const x = Math.max(16, Math.min(innerWidth - width - 16, screen.x - width * (portrait ? 0.5 : 1.7) - (portrait ? 0 : 16)));
+      const top = portrait ? innerHeight - 144 : Math.max(125, screen.y - 90);
+      screen.button.style.width = width + 'px';
+      screen.button.style.transform = `translate(${Math.round(x)}px,${Math.round(top)}px)`;
+      screen.button.querySelector('span').textContent = 'Кадр крупно';
+      screen.line.setAttribute('d', `M ${x + width / 2} ${top + 68} L ${screen.x} ${screen.y}`);
+    }
+    controls.sort((a,b) => a.x - b.x);
+    const width = Math.min(innerWidth < 650 ? 96 : 122, (innerWidth - 32 - (controls.length - 1) * 12) / controls.length), gap = 12;
+    const total = controls.length * width + (controls.length - 1) * gap;
+    const centre = controls.reduce((n,e) => n+e.x,0) / controls.length;
     const start = Math.max(16,Math.min(innerWidth-total-16,centre-total/2));
     // One quiet row above the assembly keeps labels from hiding optical paths.
-    const top = station === "prism" && innerWidth < 650 ? 66 : Math.max(innerWidth < 650 ? 66 : 125,
-      Math.min(innerHeight-190,Math.min(...visible.map(e=>e.y))-96));
-    visible.forEach((e,i) => {
+    const top = (portrait || innerWidth < 650) ? 66 : Math.max(125,
+      Math.min(innerHeight-190,Math.min(...controls.map(e=>e.y))-96));
+    controls.forEach((e,i) => {
       const x=start+i*(width+gap), middle=x+width/2;
       e.button.style.width = width + "px";
       e.button.style.transform=`translate(${Math.round(x)}px,${Math.round(top)}px)`;

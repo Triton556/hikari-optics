@@ -1,0 +1,637 @@
+[
+  {
+    "frame": "frame-0000.png",
+    "time": "2026-10-14T04:46:31.699Z",
+    "label": "settled entry"
+  },
+  {
+    "frame": "frame-0001.png",
+    "time": "2026-10-14T04:46:31.909Z",
+    "label": "settled entry"
+  },
+  {
+    "frame": "frame-0002.png",
+    "time": "2026-10-14T04:46:32.287Z",
+    "label": "settled entry"
+  },
+  {
+    "frame": "frame-0003.png",
+    "time": "2026-10-14T04:46:34.383Z",
+    "label": "settled entry"
+  },
+  {
+    "frame": "frame-0004.png",
+    "time": "2026-10-14T04:46:46.223Z",
+    "label": "open combined rays and sensor"
+  },
+  {
+    "frame": "frame-0005.png",
+    "time": "2026-10-14T04:46:46.413Z",
+    "label": "open combined rays and sensor"
+  },
+  {
+    "frame": "frame-0006.png",
+    "time": "2026-10-14T04:46:46.568Z",
+    "label": "open combined rays and sensor"
+  },
+  {
+    "frame": "frame-0007.png",
+    "time": "2026-10-14T04:46:46.742Z",
+    "label": "open combined rays and sensor"
+  },
+  {
+    "frame": "frame-0008.png",
+    "time": "2026-10-14T04:47:24.854Z",
+    "label": "combined view settled"
+  },
+  {
+    "frame": "frame-0009.png",
+    "time": "2026-10-14T04:47:25.017Z",
+    "label": "combined view settled"
+  },
+  {
+    "frame": "frame-0010.png",
+    "time": "2026-10-14T04:47:25.171Z",
+    "label": "combined view settled"
+  },
+  {
+    "frame": "frame-0011.png",
+    "time": "2026-10-14T04:48:43.903Z",
+    "label": "final combined view opening"
+  },
+  {
+    "frame": "frame-0012.png",
+    "time": "2026-10-14T04:48:44.038Z",
+    "label": "final combined view opening"
+  },
+  {
+    "frame": "frame-0013.png",
+    "time": "2026-10-14T04:48:44.243Z",
+    "label": "final combined view opening"
+  },
+  {
+    "frame": "frame-0014.png",
+    "time": "2026-10-14T04:48:44.388Z",
+    "label": "final combined view opening"
+  },
+  {
+    "frame": "frame-0015.png",
+    "time": "2026-10-14T04:49:15.779Z",
+    "label": "final combined view settled"
+  },
+  {
+    "frame": "frame-0016.png",
+    "time": "2026-10-14T04:49:16.699Z",
+    "label": "final combined view settled"
+  },
+  {
+    "frame": "frame-0017.png",
+    "time": "2026-10-14T04:49:17.403Z",
+    "label": "final combined view settled"
+  },
+  {
+    "frame": "frame-0018.png",
+    "time": "2026-10-14T04:49:17.537Z",
+    "label": "final combined view settled"
+  },
+  {
+    "frame": "frame-0019.png",
+    "time": "2026-10-14T04:51:12.970Z",
+    "label": "portrait viewport resized"
+  },
+  {
+    "frame": "frame-0020.png",
+    "time": "2026-10-14T04:51:13.100Z",
+    "label": "portrait viewport resized"
+  },
+  {
+    "frame": "frame-0021.png",
+    "time": "2026-10-14T04:51:13.184Z",
+    "label": "portrait viewport resized"
+  },
+  {
+    "frame": "frame-0022.png",
+    "time": "2026-10-14T04:51:24.415Z",
+    "label": "portrait combined view opening"
+  },
+  {
+    "frame": "frame-0023.png",
+    "time": "2026-10-14T04:51:24.517Z",
+    "label": "portrait combined view opening"
+  },
+  {
+    "frame": "frame-0024.png",
+    "time": "2026-10-14T04:51:24.610Z",
+    "label": "portrait combined view opening"
+  },
+  {
+    "frame": "frame-0025.png",
+    "time": "2026-10-14T04:52:03.166Z",
+    "label": "portrait combined view settled"
+  },
+  {
+    "frame": "frame-0026.png",
+    "time": "2026-10-14T04:52:03.247Z",
+    "label": "portrait combined view settled"
+  },
+  {
+    "frame": "frame-0027.png",
+    "time": "2026-10-14T04:52:03.413Z",
+    "label": "portrait combined view settled"
+  },
+  {
+    "frame": "frame-0028.png",
+    "time": "2026-10-14T04:52:03.593Z",
+    "label": "portrait combined view settled"
+  },
+  {
+    "frame": "frame-0029.png",
+    "time": "2026-10-14T04:54:05.815Z",
+    "label": "portrait final source refresh"
+  },
+  {
+    "frame": "frame-0030.png",
+    "time": "2026-10-14T04:54:05.914Z",
+    "label": "portrait final source refresh"
+  },
+  {
+    "frame": "frame-0031.png",
+    "time": "2026-10-14T04:54:06.022Z",
+    "label": "portrait final source refresh"
+  },
+  {
+    "frame": "frame-0032.png",
+    "time": "2026-10-14T04:54:57.142Z",
+    "label": "final portrait combined opening"
+  },
+  {
+    "frame": "frame-0033.png",
+    "time": "2026-10-14T04:54:57.367Z",
+    "label": "final portrait combined opening"
+  },
+  {
+    "frame": "frame-0034.png",
+    "time": "2026-10-14T04:54:57.471Z",
+    "label": "final portrait combined opening"
+  },
+  {
+    "frame": "frame-0035.png",
+    "time": "2026-10-14T04:55:31.311Z",
+    "label": "portrait final composition"
+  },
+  {
+    "frame": "frame-0036.png",
+    "time": "2026-10-14T04:55:31.464Z",
+    "label": "portrait final composition"
+  },
+  {
+    "frame": "frame-0037.png",
+    "time": "2026-10-14T04:55:31.663Z",
+    "label": "portrait final composition"
+  },
+  {
+    "frame": "frame-0038.png",
+    "time": "2026-10-14T04:57:50.350Z",
+    "label": "final portrait opening"
+  },
+  {
+    "frame": "frame-0039.png",
+    "time": "2026-10-14T04:57:50.455Z",
+    "label": "final portrait opening"
+  },
+  {
+    "frame": "frame-0040.png",
+    "time": "2026-10-14T04:57:50.572Z",
+    "label": "final portrait opening"
+  },
+  {
+    "frame": "frame-0041.png",
+    "time": "2026-10-14T05:00:17.159Z",
+    "label": "portrait 16 mm preset"
+  },
+  {
+    "frame": "frame-0042.png",
+    "time": "2026-10-14T05:00:17.293Z",
+    "label": "portrait 16 mm preset"
+  },
+  {
+    "frame": "frame-0043.png",
+    "time": "2026-10-14T05:00:17.429Z",
+    "label": "portrait 16 mm preset"
+  },
+  {
+    "frame": "frame-0044.png",
+    "time": "2026-10-14T05:00:17.604Z",
+    "label": "portrait 16 mm preset"
+  },
+  {
+    "frame": "frame-0045.png",
+    "time": "2026-10-14T05:00:47.951Z",
+    "label": "portrait 16 mm confirmed"
+  },
+  {
+    "frame": "frame-0046.png",
+    "time": "2026-10-14T05:00:48.071Z",
+    "label": "portrait 16 mm confirmed"
+  },
+  {
+    "frame": "frame-0047.png",
+    "time": "2026-10-14T05:00:48.175Z",
+    "label": "portrait 16 mm confirmed"
+  },
+  {
+    "frame": "frame-0048.png",
+    "time": "2026-10-14T05:00:48.255Z",
+    "label": "portrait 16 mm confirmed"
+  },
+  {
+    "frame": "frame-0049.png",
+    "time": "2026-10-14T05:01:07.730Z",
+    "label": "portrait 50 mm preset"
+  },
+  {
+    "frame": "frame-0050.png",
+    "time": "2026-10-14T05:01:07.835Z",
+    "label": "portrait 50 mm preset"
+  },
+  {
+    "frame": "frame-0051.png",
+    "time": "2026-10-14T05:01:07.937Z",
+    "label": "portrait 50 mm preset"
+  },
+  {
+    "frame": "frame-0052.png",
+    "time": "2026-10-14T05:01:08.025Z",
+    "label": "portrait 50 mm preset"
+  },
+  {
+    "frame": "frame-0053.png",
+    "time": "2026-10-14T05:01:31.257Z",
+    "label": "portrait 50 mm confirmed"
+  },
+  {
+    "frame": "frame-0054.png",
+    "time": "2026-10-14T05:01:31.415Z",
+    "label": "portrait 50 mm confirmed"
+  },
+  {
+    "frame": "frame-0055.png",
+    "time": "2026-10-14T05:01:31.621Z",
+    "label": "portrait 50 mm confirmed"
+  },
+  {
+    "frame": "frame-0056.png",
+    "time": "2026-10-14T05:01:31.804Z",
+    "label": "portrait 50 mm confirmed"
+  },
+  {
+    "frame": "frame-0057.png",
+    "time": "2026-10-14T05:02:04.359Z",
+    "label": "portrait flower focus shortcut"
+  },
+  {
+    "frame": "frame-0058.png",
+    "time": "2026-10-14T05:02:04.511Z",
+    "label": "portrait flower focus shortcut"
+  },
+  {
+    "frame": "frame-0059.png",
+    "time": "2026-10-14T05:02:04.651Z",
+    "label": "portrait flower focus shortcut"
+  },
+  {
+    "frame": "frame-0060.png",
+    "time": "2026-10-14T05:02:46.446Z",
+    "label": "portrait flower focus confirmed"
+  },
+  {
+    "frame": "frame-0061.png",
+    "time": "2026-10-14T05:02:46.591Z",
+    "label": "portrait flower focus confirmed"
+  },
+  {
+    "frame": "frame-0062.png",
+    "time": "2026-10-14T05:02:46.743Z",
+    "label": "portrait flower focus confirmed"
+  },
+  {
+    "frame": "frame-0063.png",
+    "time": "2026-10-14T05:03:24.518Z",
+    "label": "portrait chart focus shortcut"
+  },
+  {
+    "frame": "frame-0064.png",
+    "time": "2026-10-14T05:03:24.637Z",
+    "label": "portrait chart focus shortcut"
+  },
+  {
+    "frame": "frame-0065.png",
+    "time": "2026-10-14T05:03:24.745Z",
+    "label": "portrait chart focus shortcut"
+  },
+  {
+    "frame": "frame-0066.png",
+    "time": "2026-10-14T05:04:01.915Z",
+    "label": "release portrait chart focus 3 m"
+  },
+  {
+    "frame": "frame-0067.png",
+    "time": "2026-10-14T05:04:02.087Z",
+    "label": "release portrait chart focus 3 m"
+  },
+  {
+    "frame": "frame-0068.png",
+    "time": "2026-10-14T05:04:02.237Z",
+    "label": "release portrait chart focus 3 m"
+  },
+  {
+    "frame": "frame-0069.png",
+    "time": "2026-10-14T05:04:40.357Z",
+    "label": "release portrait f11 shelf collapsed"
+  },
+  {
+    "frame": "frame-0070.png",
+    "time": "2026-10-14T05:04:40.484Z",
+    "label": "release portrait f11 shelf collapsed"
+  },
+  {
+    "frame": "frame-0071.png",
+    "time": "2026-10-14T05:04:40.644Z",
+    "label": "release portrait f11 shelf collapsed"
+  },
+  {
+    "frame": "frame-0072.png",
+    "time": "2026-10-14T05:04:40.745Z",
+    "label": "release portrait f11 shelf collapsed"
+  },
+  {
+    "frame": "frame-0073.png",
+    "time": "2026-10-14T05:05:04.663Z",
+    "label": "release portrait frame close-up"
+  },
+  {
+    "frame": "frame-0074.png",
+    "time": "2026-10-14T05:05:04.802Z",
+    "label": "release portrait frame close-up"
+  },
+  {
+    "frame": "frame-0075.png",
+    "time": "2026-10-14T05:05:04.889Z",
+    "label": "release portrait frame close-up"
+  },
+  {
+    "frame": "frame-0076.png",
+    "time": "2026-10-14T05:05:05.003Z",
+    "label": "release portrait frame close-up"
+  },
+  {
+    "frame": "frame-0077.png",
+    "time": "2026-10-14T05:05:20.376Z",
+    "label": "release portrait close-up settled"
+  },
+  {
+    "frame": "frame-0078.png",
+    "time": "2026-10-14T05:05:20.535Z",
+    "label": "release portrait close-up settled"
+  },
+  {
+    "frame": "frame-0079.png",
+    "time": "2026-10-14T05:05:20.679Z",
+    "label": "release portrait close-up settled"
+  },
+  {
+    "frame": "frame-0080.png",
+    "time": "2026-10-14T05:05:20.851Z",
+    "label": "release portrait close-up settled"
+  },
+  {
+    "frame": "frame-0081.png",
+    "time": "2026-10-14T05:05:37.763Z",
+    "label": "release portrait return to table"
+  },
+  {
+    "frame": "frame-0082.png",
+    "time": "2026-10-14T05:05:37.944Z",
+    "label": "release portrait return to table"
+  },
+  {
+    "frame": "frame-0083.png",
+    "time": "2026-10-14T05:05:38.119Z",
+    "label": "release portrait return to table"
+  },
+  {
+    "frame": "frame-0084.png",
+    "time": "2026-10-14T05:05:38.300Z",
+    "label": "release portrait return to table"
+  },
+  {
+    "frame": "frame-0085.png",
+    "time": "2026-10-14T05:13:59.158Z",
+    "label": "post-review-fix-current"
+  },
+  {
+    "frame": "frame-0086.png",
+    "time": "2026-10-14T05:14:32.519Z",
+    "label": "final-desktop-qa-load"
+  },
+  {
+    "frame": "frame-0087.png",
+    "time": "2026-10-14T05:14:42.036Z",
+    "label": "qa-panel-loaded"
+  },
+  {
+    "frame": "frame-0088.png",
+    "time": "2026-10-14T05:14:52.317Z",
+    "label": "final-renderer-check-run"
+  },
+  {
+    "frame": "frame-0089.png",
+    "time": "2026-10-14T05:15:15.940Z",
+    "label": "final-renderer-report-visible"
+  },
+  {
+    "frame": "frame-0090.png",
+    "time": "2026-10-14T05:16:02.224Z",
+    "label": "report-download-list"
+  },
+  {
+    "frame": "frame-0091.png",
+    "time": "2026-10-14T05:18:50.469Z",
+    "label": "release-desktop-clean"
+  },
+  {
+    "frame": "frame-0092.png",
+    "time": "2026-10-14T05:19:07.548Z",
+    "label": "release-desktop-welcome-final"
+  },
+  {
+    "frame": "frame-0093.png",
+    "time": "2026-10-14T05:19:19.365Z",
+    "label": "release-clean-load-settled"
+  },
+  {
+    "frame": "frame-0094.png",
+    "time": "2026-10-14T05:19:41.589Z",
+    "label": "release-clean-url-submitted"
+  },
+  {
+    "frame": "frame-0095.png",
+    "time": "2026-10-14T05:20:00.265Z",
+    "label": "release-clean-navigation"
+  },
+  {
+    "frame": "frame-0096.png",
+    "time": "2026-10-14T05:20:30.612Z",
+    "label": "clean-url-direct"
+  },
+  {
+    "frame": "frame-0097.png",
+    "time": "2026-10-14T05:20:40.129Z",
+    "label": "release-open-combined"
+  },
+  {
+    "frame": "frame-0098.png",
+    "time": "2026-10-14T05:20:50.989Z",
+    "label": "release-combined-open-settled"
+  },
+  {
+    "frame": "frame-0099.png",
+    "time": "2026-10-14T05:21:00.320Z",
+    "label": "release-50mm-preset"
+  },
+  {
+    "frame": "frame-0100.png",
+    "time": "2026-10-14T05:21:08.363Z",
+    "label": "release-50mm-settled"
+  },
+  {
+    "frame": "frame-0101.png",
+    "time": "2026-10-14T05:21:08.475Z",
+    "label": "release-50mm-settled"
+  },
+  {
+    "frame": "frame-0102.png",
+    "time": "2026-10-14T05:21:17.816Z",
+    "label": "release-50mm-collapse"
+  },
+  {
+    "frame": "frame-0103.png",
+    "time": "2026-10-14T05:21:18.028Z",
+    "label": "release-50mm-collapse"
+  },
+  {
+    "frame": "frame-0104.png",
+    "time": "2026-10-14T05:21:30.184Z",
+    "label": "release-overview"
+  },
+  {
+    "frame": "frame-0105.png",
+    "time": "2026-10-14T05:21:30.930Z",
+    "label": "focus-drag-near"
+  },
+  {
+    "frame": "frame-0106.png",
+    "time": "2026-10-14T05:21:48.268Z",
+    "label": "focus-near-settled"
+  },
+  {
+    "frame": "frame-0107.png",
+    "time": "2026-10-14T05:21:48.390Z",
+    "label": "focus-near-settled"
+  },
+  {
+    "frame": "frame-0108.png",
+    "time": "2026-10-14T05:22:03.472Z",
+    "label": "focus-keyboard-right"
+  },
+  {
+    "frame": "frame-0109.png",
+    "time": "2026-10-14T05:22:11.872Z",
+    "label": "focus-keyboard-settled"
+  },
+  {
+    "frame": "frame-0110.png",
+    "time": "2026-10-14T05:22:28.344Z",
+    "label": "focus-step-1m"
+  },
+  {
+    "frame": "frame-0111.png",
+    "time": "2026-10-14T05:22:40.013Z",
+    "label": "focus-1m-settled"
+  },
+  {
+    "frame": "frame-0112.png",
+    "time": "2026-10-14T05:22:53.830Z",
+    "label": "focus-1_57m-settled"
+  },
+  {
+    "frame": "frame-0113.png",
+    "time": "2026-10-14T05:23:14.715Z",
+    "label": "focus-3_07m-settled"
+  },
+  {
+    "frame": "frame-0114.png",
+    "time": "2026-10-14T05:23:34.985Z",
+    "label": "aperture-baseline-f5_6"
+  },
+  {
+    "frame": "frame-0115.png",
+    "time": "2026-10-14T05:23:48.628Z",
+    "label": "aperture-f8-settled"
+  },
+  {
+    "frame": "frame-0116.png",
+    "time": "2026-10-14T05:24:00.082Z",
+    "label": "aperture-f8-settled"
+  },
+  {
+    "frame": "frame-0117.png",
+    "time": "2026-10-14T05:24:21.298Z",
+    "label": "aperture-f11-settled"
+  },
+  {
+    "frame": "frame-0118.png",
+    "time": "2026-10-14T05:24:35.479Z",
+    "label": "aperture-keyboard-f11_5"
+  },
+  {
+    "frame": "frame-0119.png",
+    "time": "2026-10-14T05:24:54.432Z",
+    "label": "aperture-reopen-f5_6"
+  },
+  {
+    "frame": "frame-0120.png",
+    "time": "2026-10-14T05:25:19.431Z",
+    "label": "desktop-closeup-settled"
+  },
+  {
+    "frame": "frame-0121.png",
+    "time": "2026-10-14T05:25:48.580Z",
+    "label": "escape-table-return"
+  },
+  {
+    "frame": "frame-0122.png",
+    "time": "2026-10-14T05:26:20.934Z",
+    "label": "navigation-extreme-settled"
+  },
+  {
+    "frame": "frame-0123.png",
+    "time": "2026-10-14T05:26:34.327Z",
+    "label": "final-portrait-current"
+  },
+  {
+    "frame": "frame-0124.png",
+    "time": "2026-10-14T05:26:56.604Z",
+    "label": "final-portrait-open"
+  },
+  {
+    "frame": "frame-0125.png",
+    "time": "2026-10-14T05:27:06.893Z",
+    "label": "portrait-final-shelf"
+  },
+  {
+    "frame": "frame-0126.png",
+    "time": "2026-10-14T05:27:53.666Z",
+    "label": "portrait-release-accepted"
+  }
+]
