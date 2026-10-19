@@ -1,0 +1,44 @@
+{
+  "browser": "155.0.8059.84",
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (58,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(58,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-X0bZJAWW.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-D1JUbv_K.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/?qa",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-X0bZJAWW.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-D1JUbv_K.js",
+      "status": 200
+    }
+  ],
+  "external": [],
+  "webgl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028A0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "contextLost": false
+  },
+  "filter": "ND 2.0 EV · 1/30 с",
+  "filterCaption": "ND позволяет снимать движение с длинной выдержкой при ярком свете. Увеличь плотность: лопасти на экране оставят след. A/B покажет пересвет без фильтра при той же выдержке.",
+  "removedFilter": "Фильтр снят",
+  "qaPanelCount": 0
+}

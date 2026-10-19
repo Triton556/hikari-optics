@@ -4,7 +4,7 @@
 
 ![Hikari lens cutaway: glass elements and luminous ray bundles](media/lens-cutaway.png)
 
-[Live demo](https://hikari-optics.blondperch32.chatgpt.site)
+[Live demo](https://triton556.github.io/hikari-optics/)
 
 **Stack:** Three.js · WebGL · GLSL · JavaScript · Vite
 
@@ -25,6 +25,8 @@ Open the local URL printed by Vite. A WebGL-capable browser is required; a GPU-b
 npm test       # optics, state, placement and layout regression tests
 npm run build # production bundle in dist/
 ```
+
+Deployment: GitHub Pages via GitHub Actions on every push to `main`.
 
 This repository contains the application source and its test suite. It has no backend, account system, or API key requirement.
 
@@ -77,7 +79,7 @@ Actual cloud Firefox captures of the same scene:
 4. Compare the open aperture with **ƒ/11**.
 5. Switch to the lens cutaway and see the groups move.
 
-The in-app interface is currently in **Russian**. This README is in English. The hosted preview may ask you to sign in; running locally does not require an account.
+The in-app interface is currently in **Russian**. This README is in English.
 
 ## Controls
 

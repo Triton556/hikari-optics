@@ -1,0 +1,56 @@
+{
+  "devBase": "/",
+  "productionBase": "/hikari-optics/",
+  "pathAudit": [
+    {
+      "file": "index.html",
+      "line": 14,
+      "text": "href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23233235'/%3E%3Ccircle cx='32' cy='32' r='18'"
+    },
+    {
+      "file": "index.html",
+      "line": 19,
+      "text": "<script type=\"module\" src=\"/src/main.js\"></script>"
+    },
+    {
+      "file": "src/main.js",
+      "line": 12,
+      "text": "app.innerHTML = `<main id=\"world\" aria-label=\"Лаборатория света\"></main><div class=\"identity\"><span class=\"sunmark\" aria-hidden=\"true\"><svg viewBox=\"0 0 48 48\"><circle cx=\"24\" cy=\""
+    },
+    {
+      "file": "src/main.js",
+      "line": 564,
+      "text": "import.meta.env.VITE_QA === \"1\" &&"
+    },
+    {
+      "file": "src/refraction.js",
+      "line": 22,
+      "text": "// https://media.schott.com/api/public/content/061f3156c83a44ed9220770b0f65a869?v=d69b35e0"
+    },
+    {
+      "file": "src/wayfinding.js",
+      "line": 10,
+      "text": "const svg = document.createElementNS(\"http://www.w3.org/2000/svg\", \"svg\");"
+    }
+  ],
+  "assets": [
+    {
+      "file": "index.html",
+      "bytes": 1155,
+      "gzipBytes": 699
+    },
+    {
+      "file": "assets/index-D1JUbv_K.js",
+      "bytes": 693453,
+      "gzipBytes": 187104
+    },
+    {
+      "file": "assets/index-X0bZJAWW.css",
+      "bytes": 11731,
+      "gzipBytes": 3170
+    }
+  ],
+  "totalBytes": 706339,
+  "qaPanelCodePresent": false,
+  "mediaIncluded": false
+}

@@ -1,0 +1,37 @@
+{
+  "browser": "155.0.8059.84",
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (58,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(58,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-X0bZJAWW.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/hikari-optics/assets/index-D1JUbv_K.js",
+      "status": 200
+    }
+  ],
+  "external": [],
+  "cat": "50 мм · ƒ/5.6 · фокус 1.50 м",
+  "chart": "50 мм · ƒ/5.6 · фокус 3.00 м",
+  "aperture": "50 мм · ƒ/11.0 · фокус 3.00 м",
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "canvases": [
+      {
+        "width": 390,
+        "height": 844
+      }
+    ]
+  }
+}
