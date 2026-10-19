@@ -1,17 +1,32 @@
-<div align="center">
-
 # HIKARI
-### A small classroom. A world of optics.
 
-An interactive 3D lab for exploring what happens **inside a camera lens**.
-
-[Open the hosted demo](https://hikari-optics.blondperch32.chatgpt.site) · [Run locally](#run-locally) · [How it works](#under-the-glass)
+**A small classroom. A world of optics.** An interactive 3D lab for exploring what happens inside a camera lens.
 
 ![Hikari lens cutaway: glass elements and luminous ray bundles](media/lens-cutaway.png)
 
-**Three.js · WebGL · GLSL · JavaScript · Vite**
+[Live demo](https://hikari-optics.blondperch32.chatgpt.site)
 
-</div>
+**Stack:** Three.js · WebGL · GLSL · JavaScript · Vite
+
+**My role:** Danil Volodin — built the interactive optics lab with AI-assisted development.
+
+## Run locally
+
+Use Node.js **22.12+** or a supported newer release.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite. A WebGL-capable browser is required; a GPU-backed desktop browser gives the best experience. The help panel includes a lower-quality rendering option.
+
+```sh
+npm test       # optics, state, placement and layout regression tests
+npm run build # production bundle in dist/
+```
+
+This repository contains the application source and its test suite. It has no backend, account system, or API key requirement.
 
 ## Touch the light
 
@@ -78,24 +93,6 @@ The in-app interface is currently in **Russian**. This README is in English. The
 
 If the camera image becomes dark, check the lighting and exposure. In manual mode, a night scene can genuinely underexpose. Switch back to automatic exposure or reset the bench to recover a known starting point.
 
-## Run locally
-
-Use Node.js **22.12+** or a supported newer release.
-
-```sh
-npm ci
-npm run dev
-```
-
-Open the local URL printed by Vite. A WebGL-capable browser is required; a GPU-backed desktop browser gives the best experience. The help panel includes a lower-quality rendering option.
-
-```sh
-npm test       # optics, state, placement and layout regression tests
-npm run build # production bundle in dist/
-```
-
-This repository contains the application source and its test suite. It has no backend, account system, or API key requirement.
-
 ## Under the glass
 
 - **Shared 3D world:** the visitor view and sensor view use the same Three.js scene.
@@ -151,3 +148,7 @@ The lens and focus loops were rendered locally with **[HyperFrames](https://gith
 The new `causal-*` media use **native Firefox 158**, **CUA/Sky screenshots of the live browser page**, and **FFmpeg**. The GIFs are sampled real UI states, held for readability, cropped to the page and palette-encoded. They are not frame-rate demonstrations. The focus loop holds 50 mm, f/5.6 and the cat target constant; the aperture loop holds 50 mm and approximately 0.55 m focus constant. No synthetic optical transitions or third-party scene assets are added. See [capture provenance](qa/causal-captures/README.md).
 
 Built by **[Danil Volodin](https://github.com/Triton556)** with AI-assisted development. An ongoing experiment in making technical ideas tangible, playful, and visually understandable.
+
+## License
+
+[MIT](LICENSE) © 2026 Danil Volodin.
